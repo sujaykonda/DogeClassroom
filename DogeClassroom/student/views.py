@@ -13,7 +13,7 @@ f = open(parent_dir + "/model/tokenizer.json", "r")
 tokenizer = tokenizer_from_json(f.read())
 f.close()
 
-model = load_model(str(pathlib.Path().parent.absolute()) + "/model/model.h5")
+#model = load_model(str(pathlib.Path().parent.absolute()) + "/model/model.h5")
 
 
 def feedback(request):
