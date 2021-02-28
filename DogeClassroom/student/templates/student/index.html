@@ -1,0 +1,21 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'student/index.css' %}">
+</head>
+
+<div class="topBar">
+    <img class="logo" src="{% static 'student/dogeclasslogo.png' %}" width="90" height="67.5"/>
+    <img class="text" src="{% static 'student/dogeclasstext.png' %}" width="400" height="50"/>
+</div>
+
+
+<div class="App">
+    <form action="/student/feedback/" method="post">
+        {% csrf_token %}
+        <label>Enter in your feedback</label>
+        <br>
+        {{ form.feedback }}
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>

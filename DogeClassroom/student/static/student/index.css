@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  text-align: middle;
+}
+.topBar{
+  font-family: fantasy;
+  color:#282c34;
+}
+.topBar .text{
+  color:#282c34;
+  height: 60px;
+  padding-top: 20px;
+}
+.topBar .logo{
+  float: left;
+}
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
